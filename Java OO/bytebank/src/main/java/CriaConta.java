@@ -14,6 +14,9 @@ public class CriaConta {
         System.out.println("Saldo da primeira conta: " + primeiraConta.saldo);
         System.out.println("Saldo da segunra conta: " + segundaConta.saldo);
 
+        //por padrão, o Java cria tudo zerado
+        System.out.println("Saldo da primeira conta: " + primeiraConta.agencia);
+
 
     }
 }
