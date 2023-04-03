@@ -18,6 +18,16 @@ public class Conta{
             return false;
         }
     }
+
+    public boolean transfere(double valor, Conta destino){
+        if (this.saldo >= valor){
+            this.saldo -= valor;
+            destino.deposita(valor);
+            return true;
+        }
+        return false; //<- posso ocultar o else{}, pois ele já vai cair aqui se não acontecer o if de cima, porque o
+        //return encerra o método!
+    }
 }
 
 //As cores de saldo e valor diferem, porque saldo é um ATRIBUTO da classe Conta e valor é uma VARIÁVEL temporária, ou seja,
