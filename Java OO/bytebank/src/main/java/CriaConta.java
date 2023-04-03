@@ -16,6 +16,15 @@ public class CriaConta {
 
         //por padrão, o Java cria tudo zerado
         System.out.println("Saldo da primeira conta: " + primeiraConta.agencia);
+        //alterando a agencia
+        segundaConta.agencia = 25;
+        System.out.println("Agora a segunda conta está na agência: " + segundaConta.agencia);
+
+        if (primeiraConta == segundaConta){
+            System.out.println("São a mesma conta!");
+        } else {
+            System.out.println("Não são a mesma conta!");
+        }
 
 
     }
