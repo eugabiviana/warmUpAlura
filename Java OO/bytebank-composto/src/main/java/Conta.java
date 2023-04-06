@@ -1,6 +1,6 @@
 public class Conta {
     //atributos: 
-    double saldo;
+   private double saldo;
     int agencia;
     int numero;
     Cliente titular;
@@ -27,6 +27,11 @@ public class Conta {
         }
         return false; //<- posso ocultar o else{}, pois ele já vai cair aqui se não acontecer o if de cima, porque o
         //return encerra o método!
+    }
+
+    //método obrigatório para ver o saldo, já que agora a variável é PRIVATE!
+    public double mostraSaldo(){
+        return this.saldo;
     }
 }
 
