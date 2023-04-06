@@ -1,9 +1,9 @@
 public class Conta {
     //atributos:
-   private double saldo;
-   private int agencia;
-   private int numero;
-    Cliente titular;
+    private double saldo;
+    private int agencia;
+    private int numero;
+    private Cliente titular;
 
     //Criando um método
     public void deposita(double valor){
@@ -51,6 +51,14 @@ public class Conta {
 
     public void setAgencia(int agencia) {
         this.agencia = agencia;
+    }
+
+    public Cliente getTitular() {
+        return titular;
+    }
+
+    public void setTitular(Cliente titular) {
+        this.titular = titular;
     }
 }
 
