@@ -30,7 +30,7 @@ public class Conta {
     }
 
     //método obrigatório para ver o saldo, já que agora a variável é PRIVATE!
-    public double mostraSaldo(){
+    public double getSaldo(){
         return this.saldo;
     }
 }

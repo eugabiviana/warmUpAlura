@@ -11,7 +11,7 @@ public class TesteSacaNegativo {
 //        System.out.println(conta.saldo);
 
         conta.saca(101);
-        System.out.println(conta.mostraSaldo());
+        System.out.println(conta.getSaldo());
 
     }
 }

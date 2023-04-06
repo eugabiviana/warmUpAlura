@@ -1,7 +1,7 @@
 public class testaClienteSemConta {
     public static void main(String[] args) {
         Conta contaDaMarcela = new Conta();
-        System.out.println(contaDaMarcela.mostraSaldo());
+        System.out.println(contaDaMarcela.getSaldo());
 
         contaDaMarcela.titular = new Cliente();//sem criar o cliente, dá nullpointerexception
         System.out.println(contaDaMarcela.titular);
