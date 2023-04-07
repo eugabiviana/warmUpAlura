@@ -4,6 +4,9 @@ public class Conta {
     private int agencia;
     private int numero;
     private Cliente titular;
+    private static int totalDeContas; //static quer dizer da CLASSE Conta, não do objeto! Estou criando essa variável
+    // para somar as contas quando elas forem abertas na agencia.
+
 
     //Criando um método
     public void deposita(double valor){
@@ -31,6 +34,8 @@ public class Conta {
 
     //Constructor - dita a regra de criação do objeto.
     public Conta(int agencia, int numero){
+        Conta.totalDeContas++; //soma das contas abertas. Posso escrever sem o 'Conta.', mas assim é melhor pra entender do que se trata.
+        System.out.println("O total de contas abertas no banco é: " + Conta.totalDeContas);
         this.agencia = agencia;
         this.numero = numero;
         System.out.println("Estou criando a conta de número: " + this.numero);
@@ -73,6 +78,10 @@ public class Conta {
 
     public void setTitular(Cliente titular) {
         this.titular = titular;
+    }
+
+    public static int getTotalDeContas() {
+        return Conta.totalDeContas;
     }
 }
 

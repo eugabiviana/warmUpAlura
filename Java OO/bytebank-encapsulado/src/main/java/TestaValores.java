@@ -8,5 +8,10 @@ public class TestaValores {
 //        conta.setNumero(-330);
 
         System.out.println(conta.getAgencia());
+
+        Conta conta2 = new Conta(1337, 50987);
+        Conta conta3 = new Conta(1337, 60980);
+
+        System.out.println("Total de contas criadas: " + Conta.getTotalDeContas());
     }
 }

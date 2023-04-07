@@ -27,7 +27,7 @@ public class TestaMetodo {
         //mais outra forma de escrever:
         boolean sucessoTransferencia = contaDaMarcela.transfere(300, contaDoPaulo);
         if (sucessoTransferencia){
-            System.out.println("Transferência com sucesso!");
+            System.out.println("Transferido com sucesso!");
         } else {
             System.out.println("Saldo insuficiente!");
         }
