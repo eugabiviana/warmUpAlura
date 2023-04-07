@@ -29,6 +29,12 @@ public class Conta {
         //return encerra o método!
     }
 
+    //Constructor - dita a regra de criação do objeto.
+    public Conta(int agencia, int numero){
+        this.agencia = agencia;
+        this.numero = numero;
+        System.out.println("Estou criando a conta de número: " + this.numero);
+    }
     //Getters and Setters
     //método obrigatório para ver o saldo, já que agora a variável é PRIVATE!
     public double getSaldo(){
@@ -40,6 +46,10 @@ public class Conta {
     }
 
     public void setNumero(int numero){
+       if (numero <= 0){
+           System.out.println("Número inválido! Menor ou igual a Zero.");
+           return;
+       }
         this.numero = numero;
         //numero é variável TEMPORÁRIA! por isso pode ter o mesmo nome do atributo, mas são coisas doferentes! Tanto é
         // que têm cores diferentes.
@@ -50,6 +60,10 @@ public class Conta {
     }
 
     public void setAgencia(int agencia) {
+        if (agencia <= 0){
+            System.out.println("Número inválido! Menor ou igual a Zero.");
+            return;
+        }
         this.agencia = agencia;
     }
 

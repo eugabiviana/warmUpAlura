@@ -1,9 +1,9 @@
 public class TestaGetESet {
     public static void main(String[] args) {
-        Conta conta = new Conta();
-        //Isso  não funciona mais, por causa do encapsulamento:
+        Conta conta = new Conta(1337, 47567);
+        //Isso  não funciona mais, por causa do construtor:
 //        conta.numero = 1337;
-        conta.setNumero(1337);
+//        conta.setNumero(1337);
         System.out.println(conta.getNumero());
 
         Cliente paulo = new Cliente();
