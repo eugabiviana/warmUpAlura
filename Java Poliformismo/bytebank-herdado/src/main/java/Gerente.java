@@ -20,7 +20,7 @@ public class Gerente extends Funcionario{
 }
 
 /* COMENTÁRIOS:
-- Classe filha, pois herda os atributos de Funcionario.
+- Classe filha ou sub class, pois herda os atributos de Funcionario.
 - public double getBonificacao(){ -> O método possui a mesma assinatura da Classe mãe. Isto é, a mesma visibilidade,
 mesmo retorno, mesmo nome e os mesmos parâmetros de quem ele herdou.
 - return super.salario; -> troca o THIS por SUPER, para identificar que o salário vem da classe mãe! Já que o this
