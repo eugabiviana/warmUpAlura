@@ -6,7 +6,7 @@ public class Funcionario {
 
     //Método
     public double getBonificacao(){
-        return this.salario * 0.1;
+        return this.salario * 0.05;
     }
 
     //Getters and Setters

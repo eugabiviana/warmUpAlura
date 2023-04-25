@@ -2,11 +2,21 @@ public class TesteReferencias {
     public static void main(String[] args) {
         Funcionario g1 = new Gerente();
         g1.setNome("Regious");
-        String nome = g1.getNome();
+        g1.setSalario(5000.0);
 
-        g1.autentica(22222);
+        Funcionario f = new Funcionario();
+        f.setSalario(2000.0);
 
-        System.out.println(nome);
+        Funcionario ev = new EditorVideo();
+        ev.setSalario(2500.0);
+
+        ControleBonificacao controle = new ControleBonificacao();
+        controle.registra(g1);
+        controle.registra(f);
+        controle.registra(ev);
+
+        System.out.println(controle.getSoma());
+
 
 
     }
@@ -25,5 +35,7 @@ método que estejam APENAS na classe Gerente, como é o caso do método autentic
 Funcionario.
 A essa possibilidade de diferentes formas de criar um Gerente, damos o nome de Polimorfismo!
 
+- Aqui criamos os funcionários a partir da classe Funcionario para poder usar o Poliformismo no controle de bonificação.
+Faço o registro do funcionário em um método geral e o programa calcula de acordo com a classe do funcionário.
 
  */
