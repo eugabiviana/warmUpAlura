@@ -1,13 +1,12 @@
+//Não pode mais instanciar (criar) funcionários (objetos) dessa classe, pois agora ela é abstrata!
 public abstract class Funcionario {
 
     private String nome;
     private String cpf;
     private double salario;
 
-    //Método
-    public double getBonificacao(){
-        return this.salario * 0.05;
-    }
+    //Método sem corpo, não há implementação! Cada sub classe criará o seu próprio método PUBLIC.
+    public abstract double getBonificacao();
 
     //Getters and Setters
     public String getNome() {
